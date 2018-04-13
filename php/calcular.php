@@ -1,5 +1,9 @@
 <?php 
 
+    if(isset($_POST)) {
+        header('Location: ../index.html');
+    }
+
     $producto = $_POST['producto'];
     $precio = $_POST['precio'];
     $cantidad = $_POST['cantidad'];
