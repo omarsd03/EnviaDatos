@@ -3,7 +3,16 @@
     $producto = $_POST['producto'];
     $precio = $_POST['precio'];
     $cantidad = $_POST['cantidad'];
-    $total = $precio * $cantidad;
+    //$total = $precio * $cantidad;
+    $subtotal = $precio * $cantidad;
+    $formaPago = $_POST['formaPago'];
+
+    if ($formaPago = 'Tarjeta') {
+        $descuento = $subtotal * 0.20;
+    }
+    else {
+        $descuento = $subtotal * 0.10;
+    }
 
 ?>
 
