@@ -7,12 +7,14 @@
     $subtotal = $precio * $cantidad;
     $formaPago = $_POST['formaPago'];
 
-    if ($formaPago = 'Tarjeta') {
+    if ($formaPago == 'Tarjeta') {
         $descuento = $subtotal * 0.20;
     }
     else {
         $descuento = $subtotal * 0.10;
     }
+
+    $total = $subtotal - $descuento;
 
 ?>
 
@@ -30,6 +32,9 @@
     <p>Precio: <?php echo $producto; ?> </p>
     <p>Producto: <?php echo $precio; ?> </p>
     <p>Cantidad: <?php echo $cantidad; ?> </p>
+    <p>Forma de Pago: <?php echo $formaPago; ?> </p>
+    <p>Subtotal: <?php echo $subtotal; ?> </p>
+    <p>Descuento: <?php echo $descuento; ?> </p>
     <p>Total: <?php echo $total; ?> </p>
 </body>
 </html>
