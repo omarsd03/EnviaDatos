@@ -10,6 +10,9 @@
     if ($formaPago == 'Tarjeta') {
         $descuento = $subtotal * 0.20;
     }
+    elseif ($formaPago == 'Cupon') {
+        $descuento = $subtotal * 0.15;
+    }
     else {
         $descuento = $subtotal * 0.10;
     }
