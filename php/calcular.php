@@ -17,8 +17,8 @@
 </head>
 <body>
     <h1>Total a pagar:</h1>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>Precio: <?php echo $producto; ?> </p>
+    <p>Producto: <?php echo $precio; ?> </p>
+    <p>Cantidad: <?php echo $cantidad; ?> </p>
 </body>
 </html>
