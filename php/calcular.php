@@ -1,6 +1,6 @@
 <?php 
 
-    if(isset($_POST)) {
+    if(!isset($_POST)) {
         header('Location: ../index.html');
     }
 
@@ -36,8 +36,8 @@
 </head>
 <body>
     <h1>Factura</h1>
-    <p>Precio: <?php echo $producto; ?> </p>
-    <p>Producto: <?php echo $precio; ?> </p>
+    <p>Producto: <?php echo $producto; ?> </p>
+    <p>Precio: <?php echo $precio; ?> </p>
     <p>Cantidad: <?php echo $cantidad; ?> </p>
     <p>Forma de Pago: <?php echo $formaPago; ?> </p>
     <p>Subtotal: <?php echo $subtotal; ?> </p>
